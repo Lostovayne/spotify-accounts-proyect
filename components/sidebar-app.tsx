@@ -12,12 +12,13 @@ import {
 } from "@/components/ui/sidebar";
 import { data, user } from "@/constants";
 import Link from "next/link";
+import { ComponentProps } from "react";
 import { NavUser } from "./nav-user";
 import { Command } from "./ui/command";
 
-const SidebarApp = () => {
+const SidebarApp = ({ ...props }: ComponentProps<typeof Sidebar>) => {
   return (
-    <Sidebar className="pt-16 z-40" collapsible="icon">
+    <Sidebar className=" z-40" collapsible="icon" {...props}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>

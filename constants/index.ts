@@ -62,3 +62,43 @@ export const user = {
   email: "m@example.com",
   avatar: "/avatars/shadcn.jpg",
 };
+
+export const SpotifyAccounts = [
+  {
+    id: "user123",
+    email: "correo@gmail.com",
+    password: "password",
+    isFamily: true,
+    type: "Spotify",
+    renewalDate: "2023-01-01",
+    paymentValue: 7500,
+    independent: true,
+    dependsOnAccount: "",
+    status: "Active",
+    icon: "ri-spotify-fill",
+    Tenant: {
+      name: "Fake Tenant",
+      contact: "fake@tenant.com",
+      note: "fake tenant note",
+    },
+  },
+
+  {
+    id: "user12345",
+    email: "correo@gmail.com",
+    password: "password",
+    isFamily: false,
+    type: "Spotify",
+    renewalDate: "2023-01-01",
+    paymentValue: 3500,
+    independent: false,
+    dependsOnAccount: "user123",
+    status: "Active",
+    icon: "ri-spotify-fill",
+    Tenant: {
+      name: "Fake Tenant",
+      contact: "fake@tenant.com",
+      note: "fake tenant note",
+    },
+  },
+];

@@ -15,13 +15,13 @@ const Page = () => {
 
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
-      <div className="grid md:px-12 gap-y-5 lg:pl-24 auto-rows-min  lg:grid-cols-3">
+      <div className="grid md:px-12 gap-5 2xl:pl-24 auto-rows-min  lg:grid-cols-3">
         <EarningsCard />
         <ExpensesCard />
         <RenewalsCard />
       </div>
-      <div className="min-h-[100vh] flex-1 rounded-xl p-6 bg-muted/50 md:min-h-min relative ">
-        <div className="mx-auto container mt-10" >
+      <div className="min-h-[100vh] flex-1 rounded-xl mt-5 pb-10 pt-12 bg-muted/50 md:min-h-min relative ">
+        <div className="mx-auto container" >
         <DashboardTabs />
         </div>
       </div>

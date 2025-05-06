@@ -138,7 +138,8 @@ export default function AccountsTabs() {
         <h2 className="text-xl font-bold text-white">Gestión de Cuentas</h2>
         <Button
           onClick={() => setIsAddModalOpen(true)}
-          className="bg-emerald-600 hover:bg-emerald-600 text-white"
+          variant={"outline"}
+          size={"lg"}
         >
           <Plus className="h-4 w-4 mr-1" />
           Agregar Cuenta

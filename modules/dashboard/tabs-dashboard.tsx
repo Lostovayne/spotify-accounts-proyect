@@ -136,11 +136,7 @@ export default function AccountsTabs() {
     <div className="w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold text-white">Gestión de Cuentas</h2>
-        <Button
-          onClick={() => setIsAddModalOpen(true)}
-          variant={"outline"}
-          size={"lg"}
-        >
+        <Button onClick={() => setIsAddModalOpen(true)} variant={"outline"} size={"lg"}>
           <Plus className="h-4 w-4 mr-1" />
           Agregar Cuenta
         </Button>

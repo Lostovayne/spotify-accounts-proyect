@@ -1,11 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { DashboardTabs } from "@/modules/dashboard";
 import EarningsCard from "@/modules/dashboard/earnings-card";
 import ExpensesCard from "@/modules/dashboard/expenses-card";
 import RenewalsCard from "@/modules/dashboard/renewals-card";
-import { PlusIcon } from "lucide-react";
 import { toast } from "sonner";
 
 const Page = () => {
@@ -21,8 +19,8 @@ const Page = () => {
         <RenewalsCard />
       </div>
       <div className="min-h-[100vh] flex-1 rounded-xl mt-5 pb-10 pt-12 bg-muted/50 md:min-h-min relative ">
-        <div className="mx-auto container" >
-        <DashboardTabs />
+        <div className="mx-auto container">
+          <DashboardTabs />
         </div>
       </div>
     </div>
